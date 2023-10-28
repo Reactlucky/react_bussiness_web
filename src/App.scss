@@ -1,0 +1,64 @@
+#root {
+  position: absolute;
+  top: 97px;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.read-the-docs {
+  color: #888;
+}
+.p-button{
+  background-color: #888;
+  border-color: #2b2b2b;
+  &:hover{
+    border-color: #888 !important;
+    background: #2b2b2b !important;
+  }
+}
+.card-blue{
+  background-color: var(--primary-400);
+  color: #fff;
+}
+.card-green{
+  background-color: var(--green-400);
+  color: #fff;
+}
+.card-red{
+  background-color: var(--red-400);
+  color: #fff;
+}
+.card-yellow{
+  background-color: var(--yellow-400);
+  color: #fff;
+}
+.p-card{
+  .p-card-content{
+    padding: 0px !important;
+  }
+}
+.p-chart{
+  canvas{
+    width: 1900 !important;
+  }
+}

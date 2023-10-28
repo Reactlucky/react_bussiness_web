@@ -1,0 +1,11 @@
+.dashboard-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    .p-card{
+        margin: 1rem;
+        .card-value{
+            font-size: 2rem;
+        }
+    }
+}
