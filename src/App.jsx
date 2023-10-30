@@ -8,6 +8,8 @@ import "primereact/resources/primereact.min.css";
 import Dashboard from './pages/dashboard/Dashboard';
 import './App.scss';
 import 'primeicons/primeicons.css';
+import Header from './comps/header/Header';
+import Navbar from './comps/navigation/Navbar';
         
 
 function App() {

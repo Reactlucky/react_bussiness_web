@@ -9,6 +9,7 @@ import { Card } from 'primereact/card';
 import './Dashboard.scss'
 import LineDemo from './chart/LineChart';
 import VerticalBarDemo from './chart/BarChart';
+import Navbar from '../../comps/navigation/Navbar';
 
 
 const Dashboard = () => {
@@ -17,7 +18,8 @@ const Dashboard = () => {
     return (
         <>
             <Header />
-            <div className='dashboard-card'>
+            <Navbar />
+            {/* <div className='dashboard-card'>
                 <Card className='card-blue' title="Current Month Income">
                     <span className="card-value">$0.00</span>
                 </Card>
@@ -42,8 +44,8 @@ const Dashboard = () => {
                 <Card className='card-red' title="Cancelled Invoice">
                     <span className="card-value">0</span>
                 </Card>
-            </div>
-            <div className='p-4'>
+            </div> */}
+            {/* <div className='p-4'>
                 <div className='m-4 flex justify-content-between'>
                     <h2>Income Vs Expense - 2023</h2>
                     <span>
@@ -58,7 +60,7 @@ const Dashboard = () => {
                     <VerticalBarDemo />
                 </div>}
 
-            </div>
+            </div> */}
         </>
     )
 }
