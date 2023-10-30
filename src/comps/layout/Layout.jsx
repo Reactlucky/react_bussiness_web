@@ -17,7 +17,7 @@ export default function Layout(props) {
         <>
             <Header setVisibleValue={visible} onToggle={()=> toggle()} />
             {visible && <Navbar />}
-            {props.children}
+            <div className={`${visible ? "body-visible" : ""}`}>{props.children}</div>
         </>
     );
 };
