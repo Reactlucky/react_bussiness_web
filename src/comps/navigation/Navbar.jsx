@@ -177,7 +177,7 @@ export default function Navbar() {
             template: (item, options) => <div onClick={(e) => options.onClick(e)}
                 className={activeLink(routePath.getpolicy, "p-menuitem-link")}>
                 <i className="p-menuitem-icon pi pi-exclamation-circle"></i>
-                <span className="p-menuitem-text">Recurring Transactions</span>
+                <span className="p-menuitem-text">Recurring Trans...</span>
             </div>
         },
         {
