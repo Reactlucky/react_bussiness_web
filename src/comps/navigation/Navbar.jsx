@@ -30,9 +30,9 @@ export default function Navbar() {
         {
             label: "Customers",
             icon: "pi pi-chart-bar",
-            command: () => { navigate(routePath.reports) },
+            command: () => { navigate(routePath.customer) },
             template: (item, options) => <div onClick={(e) => options.onClick(e)}
-                className={activeLink(routePath.reports, "p-menuitem-link")}>
+                className={activeLink(routePath.customer, "p-menuitem-link")}>
                 <i className="p-menuitem-icon pi pi-chart-bar"></i>
                 <span className="p-menuitem-text">Customers</span>
             </div>

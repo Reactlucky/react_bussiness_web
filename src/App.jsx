@@ -10,6 +10,8 @@ import './App.scss';
 import 'primeicons/primeicons.css';
 import Header from './comps/header/Header';
 import Navbar from './comps/navigation/Navbar';
+import ContactList from './pages/customer/contactList/ContactList';
+import Layout from './comps/layout/Layout';
         
 
 function App() {
@@ -20,7 +22,7 @@ function App() {
     <Routes>
       {/* <Route path='/' element={<Login/>} /> */}
       {/* <Route path='/signup' element={<Register/>} /> */}
-      {/* <Route path='/dashboard' element={<Dashboard/>} /> */}
+      <Route path='/customer/contactlist' element={<Layout><ContactList/></Layout>} />
       <Route path='/' element={<Dashboard/>} />
     </Routes>
     </BrowserRouter>

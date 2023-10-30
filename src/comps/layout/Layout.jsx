@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "../header/Header";
 import Navbar from "../navigation/Navbar";
 
-export default function Layout() {
+export default function Layout(props) {
     const [visible, setVisible] = useState(false);
     
     const toggle = () =>{
@@ -17,6 +17,7 @@ export default function Layout() {
         <>
             <Header setVisibleValue={visible} onToggle={()=> toggle()} />
             {visible && <Navbar />}
+            {props.children}
         </>
     );
 };
