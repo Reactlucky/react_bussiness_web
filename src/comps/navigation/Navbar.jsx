@@ -232,9 +232,9 @@ export default function Navbar() {
     ];
 
     return (
-        <>
+        <div className="custom-sidebar">
             <Menu model={userMenu} />
-        </>
+        </div>
     );
 };
 

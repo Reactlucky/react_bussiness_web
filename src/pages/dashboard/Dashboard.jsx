@@ -10,6 +10,7 @@ import './Dashboard.scss'
 import LineDemo from './chart/LineChart';
 import VerticalBarDemo from './chart/BarChart';
 import Navbar from '../../comps/navigation/Navbar';
+import Layout from '../../comps/layout/Layout';
 
 
 const Dashboard = () => {
@@ -17,8 +18,9 @@ const Dashboard = () => {
 
     return (
         <>
-            <Header />
-            <Navbar />
+        <Layout />
+            {/* <Header />
+            <Navbar /> */}
             {/* <div className='dashboard-card'>
                 <Card className='card-blue' title="Current Month Income">
                     <span className="card-value">$0.00</span>
