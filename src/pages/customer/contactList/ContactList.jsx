@@ -5,6 +5,9 @@ import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 
 import { Avatar } from 'primereact/avatar';
+import InnerHeader from '../../../comps/inner-header/InnerHeader';
+import "./ContactList.scss";
+
 
 
 export default function ContactList() {
@@ -72,7 +75,9 @@ export default function ContactList() {
 
     return (
         <div className='contact-list-main'>
-            <div className='customer-header'></div>
+            <div>
+                <InnerHeader />
+            </div>
             <div className='contact-list'>
                 <div className="mt-30 custom-table">
                     <DataTable paginator dataKey="id"

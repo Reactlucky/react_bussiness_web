@@ -69,3 +69,26 @@ body {
   height: 100vh;
   width: 100vw;
 }
+.inner-header{
+  color: #fff;
+  position: relative;
+  height: calc(100vh - 595px);
+  .overlay{
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+  }
+}
+
+.btn-header{
+  border-radius: 18px !important;
+  padding: 8px 16px !important;
+  color: #fff !important;
+  font-size: 14px !important  ;
+}
