@@ -10,6 +10,13 @@
     justify-content: space-between;
     padding: 0px 20px 0px 200px;
 
+    .toggle-btn{
+        cursor: pointer;
+    }
+    .trasform-btn{
+        transform: rotate(180deg);
+    }
+
     button {
         background-color: #fff !important;
         border: none !important;

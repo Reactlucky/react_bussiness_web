@@ -18,7 +18,8 @@ export default function Header(props) {
     return (
         <div className="header">
             <div>
-                <img onClick={()=> props.onToggle()} src={Menu} />
+                {props.setVisibleValue && <img className='toggle-btn' onClick={()=> props.onToggle()} src={Menu} />}
+                {!props.setVisibleValue && <img className='toggle-btn trasform-btn' onClick={()=> props.onToggle()} src={Menu} />}
             </div>
             <div className='flex'>
                 <img src={Bell} className='mr-3' />

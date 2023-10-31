@@ -9,15 +9,11 @@ export default function Layout(props) {
         setVisible(!visible);
     }
 
-    useEffect(()=>{
-        console.log("Visible :",visible);
-    },[visible])
-
     return (
         <>
             <Header setVisibleValue={visible} onToggle={()=> toggle()} />
             {visible && <Navbar />}
-            <div className={`${visible ? "body-visible" : ""}`}>{props.children}</div>
+            <div className={`${visible ? "body-visible" : "body-unvisible"}`}>{props.children}</div>
         </>
     );
 };
