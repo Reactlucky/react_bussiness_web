@@ -1,10 +1,135 @@
-.dashboard-card{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    .p-card{
-        margin: 1rem;
-        .card-value{
-            font-size: 2rem;
-        }
+.dashboard-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  .p-card {
+    margin: 1rem;
+    .card-value {
+      font-size: 2rem;
     }
+  }
 }
+.main-top-div {
+  display: flex;
+  // background-color: red;
+  height: 300px;
+  margin-top: 120px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column {
+  flex: 1;
+//   padding: 10px;
+display: flex;
+//   border: 1px solid #ddd;
+  text-align: center;
+  align-items: center !important;
+justify-content: center !important;
+flex-direction: column;
+
+}
+
+.card {
+  width: 246px;
+  background-color: #F9F9F9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add a shadow effect */
+  padding: 10px;
+  height: 266px;
+}
+
+.card-header {
+  text-align: center;
+  padding: 10px;
+}
+
+.card-header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff; /* Add a border for a profile image effect */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Add a slight shadow to the profile image */
+}
+
+.card-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.card-content p {
+  color: #888;
+  margin: 0;
+}
+.avatar-image{
+    height: 150px !important;
+    width: 150px !important;
+}
+
+
+.rec-card {
+    width: 372px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add a shadow effect */
+    margin: 10px;
+    display: flex;
+    height: 118px;
+  }
+  
+  .rec-card-header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rec-card-header img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .rec-card-content {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    // align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+
+  
+  /* Separate the cards */
+  .rec-card + .rec-card {
+    margin: 20px;
+  }
+
+
+  
+
+  .card-first-text{
+    color: #1E2761;
+
+  }
+  .card-second-text{
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+
+  }
+  .card-third-text{
+    font-weight: 300;
+    font-size: 12px;
+    color: #000;
+
+  }
