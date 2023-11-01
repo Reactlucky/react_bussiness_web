@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ContactList.scss';
 import { InputText } from 'primereact/inputtext';
 import { DataTable } from 'primereact/datatable';
@@ -7,11 +7,14 @@ import { Column } from 'primereact/column';
 import { Avatar } from 'primereact/avatar';
 import InnerHeader from '../../../comps/inner-header/InnerHeader';
 import "./ContactList.scss";
+import { useDispatch } from 'react-redux';
+import { listcontactListAsync } from './ContactListSlice';
 
 
 
 export default function ContactList() {
 
+    const dispatch = useDispatch();
     const [searchText, setSearchText] = useState('');
     const handleSearchInputChange = (e) => {
         setSearchText(e.target.value);
@@ -72,6 +75,9 @@ export default function ContactList() {
             />
         </span>
     );
+    useEffect(()=>{
+        dispatch(listcontactListAsync());
+    },[])
 
     return (
         <div className='contact-list-main'>
