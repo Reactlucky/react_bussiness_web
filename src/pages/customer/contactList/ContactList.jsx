@@ -9,6 +9,7 @@ import InnerHeader from '../../../comps/inner-header/InnerHeader';
 import "./ContactList.scss";
 import { useDispatch } from 'react-redux';
 import { listcontactListAsync } from './ContactListSlice';
+import { Button } from 'primereact/button';
 
 
 
@@ -66,14 +67,20 @@ export default function ContactList() {
         { header: 'Actions', body: (data) => { return <span>{"Action"}</span>; } },
     ];
     const headers = (
-        <span className="p-input-icon-left">
-            <i className="pi pi-search" />
-            <InputText
-                placeholder="Search"
-                value={searchText}
-                onChange={handleSearchInputChange}
-            />
-        </span>
+        <div className='flex justify-content-between align-items-center table-header'>
+            <h2>Customers</h2>
+            <div>
+                <Button className='btn-import mr-3' label="Import" icon="pi pi-plus" outlined />
+                <span className="p-input-icon-left">
+                    <i className="pi pi-search" />
+                    <InputText
+                        placeholder="Search"
+                        value={searchText}
+                        onChange={handleSearchInputChange}
+                    />
+                </span>
+            </div>
+        </div>
     );
     // useEffect(()=>{
     //     dispatch(listcontactListAsync());

@@ -1,3 +1,14 @@
 .contact-list-main{
-    padding: 1rem
+    padding: 1rem ;
+    .table-header{
+        margin-top: 30px;
+        .btn-import{
+            border-radius: 30px;
+            font-size: 14px;
+            &:hover{
+                background: none !important;
+                border-color: #4F46E5 !important;
+            }
+        }
+    }
 }
