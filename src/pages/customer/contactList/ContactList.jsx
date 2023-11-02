@@ -75,9 +75,9 @@ export default function ContactList() {
             />
         </span>
     );
-    useEffect(()=>{
-        dispatch(listcontactListAsync());
-    },[])
+    // useEffect(()=>{
+    //     dispatch(listcontactListAsync());
+    // },[])
 
     return (
         <div className='contact-list-main'>
