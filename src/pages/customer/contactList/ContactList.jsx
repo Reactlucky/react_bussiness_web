@@ -103,7 +103,8 @@ export default function ContactList() {
                     >
                         {columns.map((col, i) => (<Column key={i} body={col.body} header={col.header} />))}
                     </DataTable>
-                </div></div>
+                </div>
+            </div>
         </div>
     )
 }
