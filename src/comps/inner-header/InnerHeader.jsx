@@ -17,7 +17,7 @@ export default function InnerHeader() {
     }, [routeName])
     return (
         <div className='inner-header'>
-            <img className='w-full' src={BlueHeader} />
+            <img className='w-full h-full' src={BlueHeader} />
             <div className='flex overlay justify-content-between'>
                 <div className='flex flex-column'>
                     {/* <div>{params.customer}</div>

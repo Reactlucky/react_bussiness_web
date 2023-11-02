@@ -12,6 +12,7 @@ import Header from './comps/header/Header';
 import Navbar from './comps/navigation/Navbar';
 import ContactList from './pages/customer/contactList/ContactList';
 import Layout from './comps/layout/Layout';
+import ContactView from './pages/customer/contactView/ContactView';
         
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       {/* <Route path='/' element={<Login/>} /> */}
       {/* <Route path='/signup' element={<Register/>} /> */}
       <Route path='/Customer/Contactlist' element={<Layout><ContactList/></Layout>} />
+      <Route path='/Customer/Contact/View' element={<Layout><ContactView/></Layout>} />
       <Route path='/' element={<Layout><Dashboard/></Layout>} />
     </Routes>
     </BrowserRouter>
